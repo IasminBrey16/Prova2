@@ -1,0 +1,16 @@
+###
+POST https://localhost:5001/api/formas-pagamento/create
+Content-Type: application/json
+
+{"FormaPagamernto": [
+    {
+        "id": 1,
+        "Metodo" : "Debito",
+        "Parcelado" : "á vista"
+    },
+    {
+        "id": 2,
+        "Metodo" : "Crédito",
+        "Parcelado" : "3x"
+    }
+]}

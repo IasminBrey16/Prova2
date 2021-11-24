@@ -1,0 +1,67 @@
+###
+POST https://localhost:5001/api/produto/create
+Content-Type: application/json
+
+{"Produtos": [
+    {
+        "id": 1,
+        "Nome" : "Arroz",
+        "Preco" : 6.7,
+        "Descricao" : "Produto de cozinha",
+        "Quantidade" : 130,
+        "CategoriaId" : 1
+    },
+    {
+        "id": 2,
+        "Nome" : "lenço umidecido",
+        "Preco" : 3.5,
+        "Descricao" : "Produto de banheiro",
+        "Quantidade" : 342,
+        "CategoriaId" : 2
+    },
+    {
+        "id": 3,
+        "Nome" : "banana",
+        "Preco" : 1.9,
+        "Descricao" : "Produto de cozinha",
+        "Quantidade" : 139,
+        "CategoriaId" : 3
+    },
+    {
+        "id": 4,
+        "Nome" : "farol",
+        "Preco" : 36.9,
+        "Descricao" : "Produto de automoveis",
+        "Quantidade" : 210,
+        "CategoriaId" : 4
+    },
+    {
+        "id": 5,
+        "Nome" : "aspirador de pó",
+        "Preco" : 235.9,
+        "Descricao" : "Produto de casa",
+        "Quantidade" : 547,
+        "CategoriaId" : 4
+    }
+]}
+
+###
+GET https://localhost:5001/api/produto/list
+
+###
+GET https://localhost:5001/api/produto/getbyid/1
+
+###
+DELETE https://localhost:5001/api/produto/delete/Bolacha
+
+###
+PUT https://localhost:5001/api/produto/update
+Content-Type: application/json
+
+{
+    "Id" : 1,
+    "Nome" : "Produto alterado",
+    "Preco" : 3.5,
+    "Descricao" : "Lorem Ipsum is simply dummy text of the printing",
+    "Quantidade" : 150
+}

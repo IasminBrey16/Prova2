@@ -1,0 +1,13 @@
+###
+POST https://localhost:5001/api/item/create
+Content-Type: application/json
+
+{
+    "ProdutoId" : 4,
+    "Preco" : 3.5,
+    "Quantidade" : 3,
+    "CarrinhoId" : ""
+}
+
+###
+GET https://localhost:5001/api/item/getbycartid/402f7a3a-a472-4e51-965a-1ce2e1832d7a

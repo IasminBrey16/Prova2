@@ -1,0 +1,9 @@
+###
+POST https://localhost:5001/api/cliente/create
+Content-Type: application/json
+
+{
+    "Nome" : "Augusto",
+    "Email" : "gutinho@email.com",
+    "Senha" : "9883"
+}
