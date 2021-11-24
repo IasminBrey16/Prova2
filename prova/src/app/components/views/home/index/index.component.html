@@ -1,0 +1,27 @@
+<mat-grid-list cols="5" rowHeight="1:1" [gutterSize]="'16px'">
+  <mat-grid-tile *ngFor="let produto of produtos">
+      <mat-card>
+          <img
+              mat-card-image
+              src="assets/imagens/sem-imagem.jpg"
+              alt="Sem imagem"
+          />
+          <mat-card-content>
+              <mat-card-title>{{ produto.nome }}</mat-card-title>
+              <mat-card-subtitle>
+                  <b>Preço: </b> {{ produto.preco | currency: "BRL" }}
+              </mat-card-subtitle>
+          </mat-card-content>
+          <mat-card-actions>
+              <button
+                  (click)="adicionar(produto)"
+                  mat-stroked-button
+                  color="warn"
+                  mat-button
+              >
+                  Adicionar
+              </button>
+          </mat-card-actions>
+      </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
